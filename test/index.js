@@ -50,7 +50,19 @@ describe('@trenskow/equals', () => {
 			expect(equals(1, '1')).to.be.false;
 			expect(equals([1, 2], { a: 1, b: 2 })).to.be.false;
 		});
-		
+
+		it ('should not equal null and object.', () => {
+			expect(equals(null, {})).to.be.false;
+		});
+
+		it ('should equal null and null.', () => {
+			expect(equals(null, null)).to.be.true;
+		});
+
+		it ('should equal undefined and undefined.', () => {
+			expect(equals(undefined, undefined)).to.be.true;
+		});
+
 	});
 
 });
