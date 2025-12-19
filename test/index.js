@@ -8,7 +8,7 @@
 
 import { expect } from 'chai';
 
-import equals from '../lib/index.js';
+import equals from '../index.js';
 
 describe('@trenskow/equals', () => {
 
