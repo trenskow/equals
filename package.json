@@ -1,6 +1,6 @@
 {
 	"name": "@trenskow/equals",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "A very simple JavaScript library to test equality between two (or more) values.",
 	"keywords": [
 		"equals",
