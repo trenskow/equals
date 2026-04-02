@@ -38,7 +38,7 @@ describe('@trenskow/equals', () => {
 
 		it('should return true for equal objects.', () => {
 			expect(equals({ a: 1, b: 2 }, { a: 1, b: 2 })).to.be.true;
-			expect(equals({ x: 'x', y: 'y' }, { x: 'x', y: 'y' })).to.be.true;
+			expect(equals({ x: 'x', y: 'y' }, { y: 'y', x: 'x' })).to.be.true;
 		});
 
 		it('should return false for different objects.', () => {
